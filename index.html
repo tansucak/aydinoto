@@ -7,7 +7,7 @@
     
     <!-- Security & Canonical (Early enforcement) -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; frame-src 'self' https://www.google.com https://google.com;">
-    <link rel="canonical" href="https://www.aydinotoservis.com.tr/"/>
+    <link rel="canonical" href="https://aydinotoservis.com.tr/"/>
 
     <!-- Critical Resource Preconnects -->
     <link href="https://fonts.googleapis.com" rel="preconnect"/>
@@ -30,17 +30,17 @@
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website"/>
-    <meta property="og:url" content="https://www.aydinotoservis.com.tr/"/>
+    <meta property="og:url" content="https://aydinotoservis.com.tr/"/>
     <meta property="og:title" content="Aydın Oto Servis | Avcılar Profesyonel Araç Bakım &amp; Onarım"/>
     <meta property="og:description" content="Avcılar Aydın Oto Servis'te bilgisayarlı arıza tespiti, periyodik araç bakımı, motor revizyonu ve fren sistemi onarımlarını uzman kadromuz ve orijinal yedek parçalarla gerçekleştiriyoruz. Hemen randevu alın!"/>
-    <meta property="og:image" content="https://www.aydinotoservis.com.tr/images/service_maintenance.webp"/>
+    <meta property="og:image" content="https://aydinotoservis.com.tr/images/service_maintenance.webp"/>
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image"/>
-    <meta property="twitter:url" content="https://www.aydinotoservis.com.tr/"/>
+    <meta property="twitter:url" content="https://aydinotoservis.com.tr/"/>
     <meta property="twitter:title" content="Aydın Oto Servis | Avcılar Profesyonel Araç Bakım &amp; Onarım"/>
     <meta property="twitter:description" content="Avcılar Aydın Oto Servis'te bilgisayarlı arıza tespiti, periyodik araç bakımı, motor revizyonu ve fren sistemi onarımlarını uzman kadromuz ve orijinal yedek parçalarla gerçekleştiriyoruz. Hemen randevu alın!"/>
-    <meta property="twitter:image" content="https://www.aydinotoservis.com.tr/images/service_maintenance.webp"/>
+    <meta property="twitter:image" content="https://aydinotoservis.com.tr/images/service_maintenance.webp"/>
 
     <!-- Structured Data (Schema.org) - LocalBusiness & FAQ -->
     <script type="application/ld+json">
@@ -48,9 +48,9 @@
       "@context": "https://schema.org",
       "@type": "AutoRepair",
       "name": "Aydın Oto Servis",
-      "image": "https://www.aydinotoservis.com.tr/images/service_maintenance.webp",
-      "@id": "https://www.aydinotoservis.com.tr/#organization",
-      "url": "https://www.aydinotoservis.com.tr/",
+      "image": "https://aydinotoservis.com.tr/images/service_maintenance.webp",
+      "@id": "https://aydinotoservis.com.tr/#organization",
+      "url": "https://aydinotoservis.com.tr/",
       "telephone": "05352119011",
       "priceRange": "$$",
       "address": {
@@ -147,7 +147,7 @@
           "@type": "ListItem",
           "position": 1,
           "name": "Ana Sayfa",
-          "item": "https://www.aydinotoservis.com.tr/"
+          "item": "https://aydinotoservis.com.tr/"
         }
       ]
     }
@@ -169,7 +169,19 @@
                 <!-- Navigation Links (Desktop) -->
                 <div class="hidden md:flex space-x-2 items-center h-full">
                     <a class="nav-link text-primary dark:text-primary px-4 py-1 font-bold h-full flex items-center mt-1 active" href="index.html">Ana Sayfa</a>
-                    <a class="nav-link text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-all h-full flex items-center hover:bg-primary/10 duration-300 px-4" href="hizmetler.html">Hizmetlerimiz</a>
+                    <div class="relative group h-full flex items-center">
+                        <a href="index.html#hizmetlerimiz" class="nav-link text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-all h-full flex items-center hover:bg-primary/10 duration-300 px-4 gap-1">
+                            <span>Hizmetlerimiz</span>
+                            <span class="material-symbols-outlined text-sm transition-transform duration-300 group-hover:rotate-180">keyboard_arrow_down</span>
+                        </a>
+                        <div class="absolute top-full left-0 hidden group-hover:flex flex-col bg-[#121222]/95 border border-primary/20 backdrop-blur-xl py-2 w-64 shadow-[0_10px_20px_rgba(0,210,255,0.15)] rounded-b-md z-[60]">
+                            <a class="px-4 py-3 text-xs text-on-surface-variant hover:text-primary hover:bg-primary/10 transition-colors uppercase font-bold tracking-wider" href="periyodik-bakim.html">Periyodik Araç Bakımı</a>
+                            <a class="px-4 py-3 text-xs text-on-surface-variant hover:text-primary hover:bg-primary/10 transition-colors uppercase font-bold tracking-wider border-t border-primary/10" href="bilgisayarli-ariza-tespiti.html">Bilgisayarlı Arıza Tespiti</a>
+                            <a class="px-4 py-3 text-xs text-on-surface-variant hover:text-primary hover:bg-primary/10 transition-colors uppercase font-bold tracking-wider border-t border-primary/10" href="motor-ve-sanziman-tamiri.html">Motor ve Şanzıman Tamiri</a>
+                            <a class="px-4 py-3 text-xs text-on-surface-variant hover:text-primary hover:bg-primary/10 transition-colors uppercase font-bold tracking-wider border-t border-primary/10" href="fren-ve-suspansiyon-bakimi.html">Fren ve Süspansiyon Bakımı</a>
+                            <a class="px-4 py-3 text-xs text-on-surface-variant hover:text-primary hover:bg-primary/10 transition-colors uppercase font-bold tracking-wider border-t border-primary/10" href="oto-elektrik-ve-klima.html">Oto Elektrik ve Klima</a>
+                        </div>
+                    </div>
                     <a class="nav-link text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-all h-full flex items-center hover:bg-primary/10 duration-300 px-4" href="randevu.html">Randevu Al</a>
                     <a class="nav-link text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-all h-full flex items-center hover:bg-primary/10 duration-300 px-4" href="#footer">İletişim</a>
                 </div>
@@ -188,7 +200,14 @@
             <!-- Mobile Dropdown Menu -->
             <div id="mobile-menu" class="hidden md:hidden flex-col bg-[#121222]/95 border-b border-primary/20 px-6 py-4 gap-4 opacity-0 -translate-y-4 transition-all duration-300">
                 <a class="text-primary font-bold py-2 border-b border-primary/10" href="index.html">Ana Sayfa</a>
-                <a class="text-on-surface-variant hover:text-primary py-2 border-b border-primary/10" href="hizmetler.html">Hizmetlerimiz</a>
+                <div class="flex flex-col gap-2 border-b border-primary/10 pb-3">
+                    <span class="text-xs text-primary-fixed-dim font-bold uppercase tracking-wider py-1">Hizmetlerimiz</span>
+                    <a class="text-on-surface-variant hover:text-primary text-sm pl-4 py-1.5 border-l border-primary/20" href="periyodik-bakim.html">Periyodik Araç Bakımı</a>
+                    <a class="text-on-surface-variant hover:text-primary text-sm pl-4 py-1.5 border-l border-primary/20" href="bilgisayarli-ariza-tespiti.html">Bilgisayarlı Arıza Tespiti</a>
+                    <a class="text-on-surface-variant hover:text-primary text-sm pl-4 py-1.5 border-l border-primary/20" href="motor-ve-sanziman-tamiri.html">Motor ve Şanzıman Tamiri</a>
+                    <a class="text-on-surface-variant hover:text-primary text-sm pl-4 py-1.5 border-l border-primary/20" href="fren-ve-suspansiyon-bakimi.html">Fren ve Süspansiyon Bakımı</a>
+                    <a class="text-on-surface-variant hover:text-primary text-sm pl-4 py-1.5 border-l border-primary/20" href="oto-elektrik-ve-klima.html">Oto Elektrik ve Klima</a>
+                </div>
                 <a class="text-on-surface-variant hover:text-primary py-2 border-b border-primary/10" href="randevu.html">Randevu Al</a>
                 <a class="text-on-surface-variant hover:text-primary py-2" href="#footer">İletişim</a>
                 <a href="randevu.html" class="w-full text-center py-3 bg-[#E63946] text-white font-bold uppercase tracking-widest mt-2 block shadow-[0_0_10px_rgba(230,57,70,0.4)]">
@@ -219,19 +238,19 @@
                 </p>
                 <div class="flex flex-wrap gap-4 mt-4">
                     <a href="randevu.html" class="flex items-center justify-center font-label-md text-label-md px-8 py-4 bg-[#E63946] text-white hover:bg-[#ff4d5a] hover:scale-105 active:scale-95 transition-all duration-300 uppercase tracking-widest shadow-[0_0_20px_rgba(230,57,70,0.6)]">Hemen Randevu Al</a>
-                    <a href="hizmetler.html" class="flex items-center justify-center font-label-md text-label-md px-8 py-4 border border-primary-container text-primary-container hover:bg-primary-container/10 hover:shadow-[0_0_10px_rgba(0,210,255,0.2)] hover:scale-105 active:scale-95 transition-all duration-300 uppercase tracking-widest">Hizmetlerimiz</a>
+                    <a href="#hizmetlerimiz" class="flex items-center justify-center font-label-md text-label-md px-8 py-4 border border-primary-container text-primary-container hover:bg-primary-container/10 hover:shadow-[0_0_10px_rgba(0,210,255,0.2)] hover:scale-105 active:scale-95 transition-all duration-300 uppercase tracking-widest">Hizmetlerimiz</a>
                 </div>
             </div>
         </section>
 
         <!-- Bento Grid Services Summary Teaser -->
-        <section class="flex flex-col gap-8">
+        <section id="hizmetlerimiz" class="scroll-mt-28 flex flex-col gap-8">
             <div class="flex justify-between items-center border-b border-primary/20 pb-4">
                 <div class="flex items-center gap-4">
                     <span class="material-symbols-outlined material-symbols-filled text-primary-container text-3xl">construction</span>
                     <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary uppercase tracking-wider italic">HİZMETLERİMİZ</h2>
                 </div>
-                <a href="hizmetler.html" class="hidden sm:flex items-center gap-1 font-label-sm text-label-sm text-primary-container hover:text-white transition-colors">
+                <a href="#hizmetlerimiz" class="hidden sm:flex items-center gap-1 font-label-sm text-label-sm text-primary-container hover:text-white transition-colors">
                     TÜMÜNÜ İNCELE <span class="material-symbols-outlined text-sm">arrow_forward</span>
                 </a>
             </div>
@@ -273,7 +292,7 @@
                             <span>Filtre Değişimi (Hava, Polen, Yakıt)</span>
                         </div>
                     </div>
-                    <a href="hizmetler.html" class="font-label-sm text-xs text-primary-container hover:text-white transition-colors flex items-center gap-1 mt-auto pt-4 border-t border-primary/10">
+                    <a href="periyodik-bakim.html" class="font-label-sm text-xs text-primary-container hover:text-white transition-colors flex items-center gap-1 mt-auto pt-4 border-t border-primary/10">
                         DETAYLI BİLGİ <span class="material-symbols-outlined text-xs">chevron_right</span>
                     </a>
                 </div>
@@ -314,7 +333,7 @@
                             <span>Hata Kodu Silme ve Sensör Kalibrasyonları</span>
                         </div>
                     </div>
-                    <a href="hizmetler.html" class="font-label-sm text-xs text-primary-container hover:text-white transition-colors flex items-center gap-1 mt-auto pt-4 border-t border-primary/10">
+                    <a href="bilgisayarli-ariza-tespiti.html" class="font-label-sm text-xs text-primary-container hover:text-white transition-colors flex items-center gap-1 mt-auto pt-4 border-t border-primary/10">
                         DETAYLI BİLGİ <span class="material-symbols-outlined text-xs">chevron_right</span>
                     </a>
                 </div>
@@ -355,7 +374,7 @@
                             <span>Direksiyon Kutusu Tamiri ve Pompa Bakımı</span>
                         </div>
                     </div>
-                    <a href="hizmetler.html" class="font-label-sm text-xs text-primary-container hover:text-white transition-colors flex items-center gap-1 mt-auto pt-4 border-t border-primary/10">
+                    <a href="fren-ve-suspansiyon-bakimi.html" class="font-label-sm text-xs text-primary-container hover:text-white transition-colors flex items-center gap-1 mt-auto pt-4 border-t border-primary/10">
                         DETAYLI BİLGİ <span class="material-symbols-outlined text-xs">chevron_right</span>
                     </a>
                 </div>
@@ -396,7 +415,7 @@
                             <span>Silindir Kapak Contası Onarımları</span>
                         </div>
                     </div>
-                    <a href="hizmetler.html" class="font-label-sm text-xs text-primary-container hover:text-white transition-colors flex items-center gap-1 mt-auto pt-4 border-t border-primary/10">
+                    <a href="motor-ve-sanziman-tamiri.html" class="font-label-sm text-xs text-primary-container hover:text-white transition-colors flex items-center gap-1 mt-auto pt-4 border-t border-primary/10">
                         DETAYLI BİLGİ <span class="material-symbols-outlined text-xs">chevron_right</span>
                     </a>
                 </div>
@@ -434,10 +453,10 @@
                         </div>
                         <div class="flex items-center gap-2">
                             <span class="material-symbols-outlined text-[14px] text-primary-container font-bold">done</span>
-                            <span>Aks Milleri, Mafsal ve Diferansiyel Onarımları</span>
+                            <span>Aks Milleri, Mafsal and Diferansiyel Onarımları</span>
                         </div>
                     </div>
-                    <a href="hizmetler.html" class="font-label-sm text-xs text-primary-container hover:text-white transition-colors flex items-center gap-1 mt-auto pt-4 border-t border-primary/10">
+                    <a href="motor-ve-sanziman-tamiri.html" class="font-label-sm text-xs text-primary-container hover:text-white transition-colors flex items-center gap-1 mt-auto pt-4 border-t border-primary/10">
                         DETAYLI BİLGİ <span class="material-symbols-outlined text-xs">chevron_right</span>
                     </a>
                 </div>
@@ -478,7 +497,7 @@
                             <span>Radyatör ve Termostat Değişim Operasyonları</span>
                         </div>
                     </div>
-                    <a href="hizmetler.html" class="font-label-sm text-xs text-primary-container hover:text-white transition-colors flex items-center gap-1 mt-auto pt-4 border-t border-primary/10">
+                    <a href="oto-elektrik-ve-klima.html" class="font-label-sm text-xs text-primary-container hover:text-white transition-colors flex items-center gap-1 mt-auto pt-4 border-t border-primary/10">
                         DETAYLI BİLGİ <span class="material-symbols-outlined text-xs">chevron_right</span>
                     </a>
                 </div>
@@ -829,11 +848,14 @@
             </div>
             <div class="flex flex-col md:flex-row justify-between items-center gap-4 w-full">
                 <span class="font-label-sm text-label-sm tracking-widest text-primary dark:text-primary-fixed opacity-70">AYDIN OTO SERVİS MÜHENDİSLİK</span>
-                <div class="flex gap-6">
+                <div class="flex gap-6 flex-wrap justify-center">
                     <a class="font-label-sm text-label-sm tracking-widest text-on-surface-variant/60 uppercase hover:text-secondary-fixed transition-colors duration-200 opacity-80 hover:opacity-100" href="index.html">Ana Sayfa</a>
-                    <a class="font-label-sm text-label-sm tracking-widest text-on-surface-variant/60 uppercase hover:text-secondary-fixed transition-colors duration-200 opacity-80 hover:opacity-100" href="hizmetler.html">Hizmetler</a>
+                    <a class="font-label-sm text-label-sm tracking-widest text-on-surface-variant/60 uppercase hover:text-secondary-fixed transition-colors duration-200 opacity-80 hover:opacity-100" href="periyodik-bakim.html">Periyodik Bakım</a>
+                    <a class="font-label-sm text-label-sm tracking-widest text-on-surface-variant/60 uppercase hover:text-secondary-fixed transition-colors duration-200 opacity-80 hover:opacity-100" href="bilgisayarli-ariza-tespiti.html">Arıza Tespiti</a>
+                    <a class="font-label-sm text-label-sm tracking-widest text-on-surface-variant/60 uppercase hover:text-secondary-fixed transition-colors duration-200 opacity-80 hover:opacity-100" href="motor-ve-sanziman-tamiri.html">Motor & Şanzıman</a>
+                    <a class="font-label-sm text-label-sm tracking-widest text-on-surface-variant/60 uppercase hover:text-secondary-fixed transition-colors duration-200 opacity-80 hover:opacity-100" href="fren-ve-suspansiyon-bakimi.html">Fren & Süspansiyon</a>
+                    <a class="font-label-sm text-label-sm tracking-widest text-on-surface-variant/60 uppercase hover:text-secondary-fixed transition-colors duration-200 opacity-80 hover:opacity-100" href="oto-elektrik-ve-klima.html">Elektrik & Klima</a>
                     <a class="font-label-sm text-label-sm tracking-widest text-on-surface-variant/60 uppercase hover:text-secondary-fixed transition-colors duration-200 opacity-80 hover:opacity-100" href="randevu.html">Randevu Al</a>
-                    <a class="font-label-sm text-label-sm tracking-widest text-on-surface-variant/60 uppercase hover:text-secondary-fixed transition-colors duration-200 opacity-80 hover:opacity-100" href="#footer">İletişim</a>
                 </div>
             </div>
             <div class="flex justify-center items-center w-full border-t border-primary/10 pt-4 text-center">
